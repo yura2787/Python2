@@ -19,15 +19,15 @@ jobs:
           sleep 5
           pwd
 
-welcome_script_in_parallel:
-  welcome_script:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Welcome part
-        run: echo "Hello, guys 🥺 444444"
-      - name: Get info
-        run: |
-          echo "Getting comp info ..."
-          whoami
-          sleep 5
-          pwd
+  welcome_script_in_parallel:
+    welcome_script:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Welcome part
+          run: echo "Hello, guys 🥺 444444"
+        - name: Get info
+          run: |
+            echo "Getting comp info ..."
+            whoami
+            sleep 5
+            pwd
