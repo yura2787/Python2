@@ -20,17 +20,17 @@ jobs:
           pwd
 
   welcome_script_in_parallel:
-    welcome_script:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Welcome part
-          run: echo "Hello, guys 🥺 444444"
-        - name: Get info
-          run: |
-            echo "Getting comp info ..."
-            whoami
-            sleep 5
-            pwd
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome part
+        run: echo "Hello, guys 🥺 444444"
+      - name: Get info
+        run: |
+          echo "Getting comp info ..."
+          whoami
+          sleep 5
+          pwd
 
   checks_needed:
       needs: [welcome_script, welcome_script_in_parallel]
